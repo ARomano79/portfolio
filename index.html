@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Shadows+Into+Light&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/1f251b3181.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            text-align: center;
+            font-family: 'Urbanist', sans-serif;
+            font-size: 18px;
+
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+          
+            background-color: black;
+            color: white;
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        
+            background: repeating-linear-gradient(110deg, white, yellow, orange, magenta, purple, blue, aqua, lime);
+            background-clip: text;
+            color: transparent;
+        }
+
+        #main-content-area {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+        }
+
+        #header-content {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+        }
+
+        /* NAV BAR */
+        #nav-bar {
+
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            background-color: black;
+        }
+
+        #nav-icon-dashboard {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            object-fit: cover;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+
+        #nav-icon-dashboard a {
+
+            width: 2.8rem;
+            height: 2.8rem;
+
+            margin: 0.5rem 1rem 0.5rem 0.1rem;
+            padding: 0.2rem;
+            text-decoration: none;
+
+            border: 1px solid white;
+            border-radius: 0.4rem;
+
+            color: white;
+            opacity: 90%;
+
+        }
+
+        #nav-icon-dashboard a:hover {
+            background-color: magenta;
+        }
+
+
+        #nav-icon-dashboard i {
+            box-sizing: border-box;
+            margin: 0.2rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 2rem;
+        }
+
+        /* END NAV BAR */
+
+        /* HERO */
+
+        #hero {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+        }
+
+        #profile-img-wrapper {
+
+            border-radius: 50%;
+            padding: 0;
+            margin: 2rem auto;
+            width: 20rem;
+            height: auto;
+
+        }
+
+        #profile-img-wrapper img {
+            width: 16rem;
+            height: auto;
+            border-radius: 50%;
+
+            border: 10px dotted white;
+            border-right: none;
+            border-top: none;
+
+            margin: 0 auto;
+            padding: 0;
+
+        }
+
+        h1,
+        h2 {
+            font-family: 'Cabin Sketch', serif;
+            font-weight: 700;
+
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 0 auto;
+            padding: 0;
+            line-height: 4.8rem;
+            letter-spacing: 0.1rem;
+        }
+
+        #hero p {
+            font-family: 'Shadows Into Light', cursive;
+            color: white;
+            opacity: 80%;
+            font-size: 2rem;
+            margin: 0.1rem auto 0.2rem auto;
+            padding: 0.2rem;
+            line-height: 2.4rem;
+        }
+
+
+        /* END HERO */
+
+
+        /* PROJECT & ABOUT SECTIONS */
+
+        #project-box,
+        #about-box {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+
+            border-top: 0.1rem solid rgb(59, 59, 59);
+            color: white;
+
+         
+
+        }
+
+        #project-box {
+            background-color: rgb(20, 20, 20);
+        }
+
+        #about-box {
+            background-color: rgb(32, 31, 31);
+
+        }
+
+
+        #project-box-content,
+        #about-box-content {
+          
+            margin: 0 auto;
+            padding: 0.8rem;
+            width: 80%;
+           
+        }
+
+
+        h2 {
+            font-size: 3.6rem;
+            margin: 0.4rem auto;
+            padding: 0.4rem;
+            line-height: 3.8rem;
+            letter-spacing: 0.1rem;
+            color: white;
+            opacity: 75%;
+        }
+
+        .card-holder {
+
+            margin: 0 auto;
+            padding: 0;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+        }
+
+        .card {
+            border: 3px solid white;
+            border-radius: 0.4rem;
+            margin: 0.4rem auto 1rem auto;
+            width: 30rem;
+            overflow-wrap: normal;
+
+        }
+
+
+        .card h3 {
+            margin: 0 auto;
+            padding: 0.2rem;
+            width: 100%;
+
+            border-bottom: 1px solid white;
+
+            font-family: 'Shadows Into Light', cursive;
+            color: aqua;
+            opacity: 90%;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+
+        }
+
+        .card p,
+        h4 {
+
+            margin: auto 2rem 0 3rem;
+            padding: 0.2rem;
+            text-align: start;
+
+
+        }
+
+        .card p {
+            font-size: 20px;
+            line-height: 1.4rem;
+
+        }
+
+        h3 span {
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-weight: 800;
+            font: 24px;
+            margin-top: 0.4rem;
+        }
+
+        .card img {
+            border: 2px solid white;
+            width: 60%;
+            height: auto;
+            padding: 0.2rem;
+            border-radius: 0.4rem;
+            margin-top: 0.8rem;
+
+        }
+
+        .card::after {
+            content: "";
+            clear: both;
+            display: flex;
+        }
+
+        .skill-icon-tray {
+
+            margin: 0.2rem auto 0.1rem auto;
+            padding: 0.2rem;
+            font-size: 0.8rem;
+            line-height: 0.9rem;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            align-items: center;
+            color: white;
+        }
+
+
+
+        #button-box {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0.2rem;
+
+        }
+
+        button {
+            background-color: black;
+            color: aqua;
+            border: 2px solid white;
+            border-radius: 0.4rem;
+            margin: 0 auto 0.1rem auto;
+            padding: 0.1rem 1rem;
+            font-size: 2rem;
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+
+
+        #social-icons {
+
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+
+        }
+
+        #social-icon-dashboard {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            object-fit: cover;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        #social-icon-dashboard a {
+
+            width: 2.8rem;
+            height: 2.8rem;
+
+            margin: 0.4rem auto;
+            padding: 0.2rem;
+            text-decoration: none;
+
+            border: 1px solid transparent;
+            border-radius: 0.4rem;
+
+            color: white;
+            opacity: 80%;
+
+        }
+
+        #social-icon-dashboard a:hover {
+            border: 1px solid white;
+            color: white;
+
+        }
+
+
+        #social-icon-dashboard i {
+            box-sizing: border-box;
+            margin: 0.2rem auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            font-size: 2rem;
+        }
+
+        .about-card {
+            border: 1px solid transparent;
+            border-radius: 0.4rem;
+            margin: 0.2rem auto 1rem auto;
+            width: 60rem;
+
+        }
+
+        .about-card::after {
+            content: "";
+            clear: both;
+            display: flex;
+        }
+
+        
+        .about-card h3, .about-card p {
+            margin: 0.1rem auto 0.1rem 0.4rem;
+            padding: 0.2rem;
+            width: 100%;
+            opacity: 90%;
+
+            letter-spacing: 0.1rem;
+            
+            text-align: start;
+
+        }
+
+        .about-card h3 {
+            font-size: 1.1rem;
+            line-height: 1.2rem;
+            text-transform: uppercase;
+            font-family: 'Shadows Into Light', cursive;
+            color: aqua;
+
+        }
+
+
+        .about-card p {
+            font-size: 0.9rem;
+            line-height: 1.1rem;
+            width: 98%;
+
+        }
+
+
+
+
+
+        /* END PROJECT & ABOUT SECTIONS */
+
+
+
+        /* FOOTER */
+
+        #footer {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        #footer p {
+            font-size: 20px;
+
+            margin: 0 auto;
+            padding: 0.2rem;
+            width: 100%;
+
+            font-family: 'Shadows Into Light', cursive;
+            opacity: 60%;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            color: white;
+        }
+
+
+        /* END FOOTER */
+
+
+        /* SPACERS */
+
+        .spacer-1rem {
+            height: 1rem;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .spacer-2rem {
+            height: 2rem;
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        .spacer-4rem {
+            height: 4rem;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .spacer-6rem {
+            height: 6rem;
+            margin: 0;
+            padding: 0;
+
+            border: 2px solid lime;
+        }
+
+        .spacer-8rem {
+            height: 8rem;
+            margin: 0;
+            padding: 0;
+
+            border: 2px solid lime;
+        }
+
+        .spacer-10rem {
+            height: 10rem;
+            margin: 0;
+            padding: 0;
+
+            border: 2px solid lime;
+        }
+
+        .spacer-12rem {
+            height: 12rem;
+            margin: 0;
+            padding: 0;
+
+            border: 2px solid lime;
+        }
+
+        .spacer-16rem {
+            height: 16rem;
+            margin: 0;
+            padding: 0;
+
+            border: 2px solid lime;
+        }
+
+        .spacer-20rem {
+            height: 20rem;
+            margin: 0;
+            padding: 0;
+
+            border: 2px solid lime;
+        }
+
+        .spacer-40rem {
+            height: 40rem;
+            margin: 0;
+            padding: 0;
+
+            border: 2px solid lime;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main-content-area">
+
+        <!-- HEADER (NAV & HERO)-->
+        <div id="header-content">
+
+            <!-- NAV BAR -->
+            <div id="nav-bar">
+                <div id="nav-icon-dashboard">
+                    <a href="http://linkedin.com/in/amie-romano-291159a2" target="_blank" id="linked-in-profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://www.upwork.com/freelancers/~0152e9ab5e73aefb86?viewMode=1" target="_blank"
+                        id="upwork-profile">
+                        <i class="fa-brands fa-upwork"></i>
+                    </a>
+
+                    <a href="https://github.com/ARomano79" target="_blank" id="github-profile">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+
+                    <a href="https://www.freecodecamp.org/ARomano79" target="_blank" id="free-code-camp-profile">
+                        <i class="fa-brands fa-free-code-camp"></i>
+                    </a>
+
+                    <a href="mailto:a.romano2010@hotmail.com?subject=Hello" target="_blank" id="email-link">
+                        <i class="fa-solid fa-at"></i>
+                    </a>
+
+                    <a href="" id="nav-menu">
+                        <i class="fa-solid fa-bars"></i></a>
+
+                </div>
+            </div>
+            <!-- END NAV BAR-->
+
+
+            <!-- HERO -->
+
+            <div id="hero">
+                <div class="spacer-1rem"></div>
+                <div id="profile-img-wrapper">
+                    <div id="wrapper-border">
+                        <img src="./src/avatar-glasses1.png" alt="avatar-photo" />
+                    </div>
+                </div>
+
+                <div id="greeting-tagline">
+                    <h1>Hello, I'm Amie.</h1>
+                    <p>I'm a Vet Tech who makes websites and other stuff.</p>
+                </div>
+                <div class="spacer-1rem"></div>
+
+            </div>
+
+            <!-- END HERO -->
+
+
+            <!-- PROJECTS -->
+            <div class="spacer-1rem"></div>
+            <div id="project-box">
+                <h2>Projects</h2>
+                <div id="project-box-content">
+                    <div class="card-holder">
+                        <div class="card">
+                            <h3>The Angry Spider</h3>
+                            <img src="./src/AS-thumbnail.png" alt="thumbnail of 'The Angry Spider' site" />
+                            <h4>Dev Notes:</h4>
+                            <p class="project-desc">Pre-release product page for a young author who is currently working
+                                on her first book. An official release date is
+                                TBD, but should be coming soon, according to local sources. </p>
+                            <div class="skill-icon-tray"> Built with
+                                <i class="fa-brands fa-html5"></i> |
+                                <i class="fa-brands fa-css3"></i>
+                            </div>
+                        </div>
+
+                        <!--   ADD IN LATER - UPCOMING PROJECTS
+
+                        <div class="card">
+                            <h3>The Collectible Corner</h3>
+                            <img src="" alt="site thumbnail" />
+                            <h4>Dev Notes:</h4>
+                            <p class="project-desc">Site in process of being developed in an effort to digitalize and preserve collectible items.</p>
+                            <div class="skill-icon-tray">   Built with
+                                    <i class="fa-brands fa-html5"></i> |
+                                    <i class="fa-brands fa-css3"></i>
+                                </div>
+
+                        </div>
+
+                        <div class="card">
+                            <h3>Calculator
+                                <span>(rebuild of in-class model)</span>
+                            </h3>
+                            <img src="" alt="site thumbnail" />
+                            <h4>Dev Notes:</h4>
+                            <p class="project-desc">desc here</p>
+                            <div class="skill-icon-tray">   Built with
+                                    <i class="fa-brands fa-html5"></i> |
+                                    <i class="fa-brands fa-css3"></i> | 
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h3>Calculator Upgrade</h3>
+                            <img src="" alt="site thumbnail" />
+                            <h4>Dev Notes:</h4>
+                            <p class="project-desc">planning to add common conversions and veterinary dosage calc.</p>
+                           <div class="skill-icon-tray">   Built with
+                                    <i class="fa-brands fa-html5"></i> |
+                                    <i class="fa-brands fa-css3"></i> |
+                                 <i class="fa-brands fa-js"></i>
+                            </div>
+                               
+                        </div>
+
+                        -->
+
+                        <div class="card">
+                            <h3>Your Site/Project</h3>
+                            <img src="./src/sample-thumbnail.png" alt="site thumbnail" />
+                            <h4>Your site or project could be here!</h4>
+                            <p class="project-desc">I am currently available for remote projects!</p>
+                            <div class="skill-icon-tray"> Built with
+                                <i class="fa-brands fa-html5"></i> |
+                                <i class="fa-brands fa-css3"></i> |
+                                <i class="fa-brands fa-js"></i>
+                            </div>
+                        </div>
+
+                        <!--
+
+                        <div id="button-box">
+                            <button>More (Coming Soon!) -></button>
+                        </div>
+
+                        -->
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- END PROJECTS-->
+
+            <!-- ABOUT -->
+
+            <div id="about-box">
+                <h2>About</h2>
+                <div id="about-box-content">
+                    <div class="card-holder">
+                        <div class="about-card">
+                            <h3>Web Development</h3>
+                            <p>When I first learned HTML, I thought table layouts were a game-changer and
+                                the best way to add a gradient background to anything was to make it in
+                                Photoshop first. Relearning HTML and CSS over the past year with freeCodeCamp
+                                has made me appreciate how much the internet has grown since I took my first HTML class
+                                in 1999.  I'm currently working on the JavaScript module of their front-end development program. 
+                            </p>
+                        </div>
+
+                        <div class="about-card">
+                            <h3>Licensed Vet Tech (LVT)</h3>
+                            <p>While experienced in surgery and anesthesia for small animal soft tissue and
+                                COHAT procedures, I have a range of interests within the veerinary field, including
+                                cold laser therapy in regard to post-op recovery and mobility concerns,
+                                nutrition, parasitology, and anything equine. I also have both shelter/kennel
+                                and large animal experience.
+                            </p>
+                        </div>
+
+                        <div class="about-card">
+                            <h3>Interests/Hobbies</h3>
+                            <p>Artistically, I enjoy painting (mostly watercolor), sketching, zentangle, and mobile
+                                photography; and other interests include photography, everything equine, paddleboarding
+                                and boogieboarding, and martial arts and yoga.
+                            </p>
+
+                        </div>
+
+                        <div id="social-icons">
+                            <div id="social-icon-dashboard">
+                                <a href="http://linkedin.com/in/amie-romano-291159a2" target="_blank"
+                                    id="linked-in-profile">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+
+                                <a href="https://www.upwork.com/freelancers/~0152e9ab5e73aefb86?viewMode=1"
+                                    target="_blank" id="upwork-profile">
+                                    <i class="fa-brands fa-upwork"></i>
+                                </a>
+
+                                <a href="https://github.com/ARomano79" target="_blank" id="github-profile">
+                                    <i class="fa-brands fa-square-github"></i>
+                                </a>
+
+                                <a href="https://www.freecodecamp.org/ARomano79" target="_blank"
+                                    id="free-code-camp-profile">
+                                    <i class="fa-brands fa-free-code-camp"></i>
+                                </a>
+
+                                <a href="mailto:a.romano2010@hotmail.com?subject=Hello" target="_blank" id="email-link">
+                                    <i class="fa-solid fa-at"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- END ABOUT-->
+
+
+            <!-- FOOTER -->
+            <div id="footer">
+                <p>&#169; 2023-2024 Amie Romano</p>
+            </div>
+
+            <!-- FOOTER -->
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
