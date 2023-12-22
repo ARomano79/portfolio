@@ -19,9 +19,14 @@
     --gradient-purple: rgb(193, 0, 240);
     --gradient-white: rgb(255, 255, 255);
 
-    --header-gradient: repeating-linear-gradient(110deg, rgb(255, 255, 255), rgb(255, 245, 1), rgb(255, 0, 170), rgb(193, 0, 240), rgb(0, 248, 254), #A6FF00, rgb(255, 255, 255));
+    --header-gradient: repeating-linear-gradient(110deg, rgb(255, 255, 255), rgb(255, 245, 1), rgb(255, 0, 170), rgb(193, 0, 240), rgb(0, 248, 254), rgb(9, 235, 0), rgb(255, 255, 255));
 
     --text-main: rgb(255, 255, 255);
+
+    --menu-button-hover: repeating-linear-gradient(110deg, rgba(255, 245, 1, 0.75), rgba(255, 0, 170, 0.75), rgba(193, 0, 240, 0.75), rgba(0, 248, 254, 0.75), rgba(9, 235, 0, 0.75));
+
+
+
 
     --misc-color-green: #A6FF00;
 
@@ -41,9 +46,13 @@ body {
     padding: 0;
     width: 100%;
 
+    /* 
+
     background: var(--header-gradient);
     background-clip: text;
     color: transparent;
+
+    */
 }
 
 #main-content-area {
@@ -96,7 +105,7 @@ body {
 }
 
 #nav-icon-dashboard a:hover {
-    background-color: var(--gradient-blue);
+    background: var(--menu-button-hover);
 }
 
 
@@ -151,6 +160,10 @@ h1 {
     padding: 0;
     line-height: 4.8rem;
     letter-spacing: 0.1rem;
+
+    background: var(--header-gradient);
+    background-clip: text;
+    color: transparent;
 }
 
 #hero p {
@@ -342,7 +355,7 @@ button {
 
 #social-icon-dashboard a:hover {
     border: 1px solid white;
-    color: var(--gradient-blue);
+    background: var(--menu-button-hover);
 }
 
 #social-icon-dashboard i {
