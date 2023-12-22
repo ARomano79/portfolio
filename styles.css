@@ -5,7 +5,6 @@
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     font-size: 18px;
-
 }
 
 html {
@@ -15,7 +14,6 @@ html {
   
     background-color: black;
     color: white;
-
 }
 
 body {
@@ -83,7 +81,7 @@ body {
 }
 
 #nav-icon-dashboard a:hover {
-    background-color: magenta;
+    background-color: aqua;
 }
 
 
@@ -105,7 +103,6 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-
 }
 
 #profile-img-wrapper {
@@ -157,7 +154,6 @@ h1 {
     line-height: 2.4rem;
 }
 
-
 /* END HERO */
 
 
@@ -172,8 +168,6 @@ h1 {
     border-top: 0.1rem solid rgb(59, 59, 59);
     color: white;
 
- 
-
 }
 
 #project-box {
@@ -185,7 +179,6 @@ h1 {
 
 }
 
-
 #project-box-content,
 #about-box-content {
   
@@ -194,7 +187,6 @@ h1 {
     width: 80%;
    
 }
-
 
 h2 {
     font-size: 3.6rem;
@@ -229,7 +221,6 @@ h2 {
 
 }
 
-
 .card h3 {
     margin: 0 auto;
     padding: 0.2rem;
@@ -253,8 +244,6 @@ h4 {
     margin: auto 2rem 0 3rem;
     padding: 0.2rem;
     text-align: start;
-
-
 }
 
 .card p {
@@ -306,13 +295,10 @@ h4 {
     color: white;
 }
 
-
-
 #button-box {
     width: 100%;
     margin: 0 auto;
     padding: 0.2rem;
-
 }
 
 button {
@@ -326,14 +312,11 @@ button {
     font-family: 'Shadows Into Light', cursive;
 }
 
-
-
 #social-icons {
 
     margin: 0 auto;
     padding: 0;
     width: 100%;
-
 }
 
 #social-icon-dashboard {
@@ -372,7 +355,6 @@ button {
 
 }
 
-
 #social-icon-dashboard i {
     box-sizing: border-box;
     margin: 0.2rem auto;
@@ -397,7 +379,6 @@ button {
     display: flex;
 }
 
-
 .about-card h3, .about-card p {
     margin: 0.1rem auto 0.1rem 0.4rem;
     padding: 0.2rem;
@@ -419,7 +400,6 @@ button {
 
 }
 
-
 .about-card p {
     font-size: 0.9rem;
     line-height: 1.1rem;
@@ -427,13 +407,7 @@ button {
 
 }
 
-
-
-
-
 /* END PROJECT & ABOUT SECTIONS */
-
-
 
 /* FOOTER */
 
@@ -459,9 +433,7 @@ button {
     color: white;
 }
 
-
 /* END FOOTER */
-
 
 /* SPACERS */
 
@@ -476,7 +448,6 @@ button {
     height: 2rem;
     margin: 0;
     padding: 0;
-
 
 }
 
