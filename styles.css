@@ -72,6 +72,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 #nav-icon-dashboard {
@@ -84,7 +85,6 @@ body {
     object-fit: cover;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 #nav-icon-dashboard a {
