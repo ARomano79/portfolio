@@ -21,16 +21,26 @@
 
     --header-gradient: repeating-linear-gradient(110deg, rgb(255, 255, 255), rgb(255, 245, 1), rgb(255, 0, 170), rgb(193, 0, 240), rgb(0, 248, 254), rgb(9, 235, 0), rgb(255, 255, 255));
 
+    --alt-gradient-1-berry: rgb(166, 3, 139);
+    --alt-gradient-1-blue: rgb(3, 88, 140);
+    --alt-gradient-1-dark-green: rgb(3, 150, 66);
+    --alt-gradient-1-med-green: rgb(3, 166, 166);
+    --alt-gradient-1-light-green: rgb(4, 191, 173);
+
+    --alt-gradient-1: repeating-linear-gradient(110deg, rgb(255, 255, 255), rgb(166, 3, 139), rgb(3, 88, 140), rgb(3, 150, 66), rgb(3, 166, 166), rgb(4, 191, 173), rgb(255, 255, 255));
+    
+    
+    
     --text-main: rgb(255, 255, 255);
 
     --menu-button-hover: repeating-linear-gradient(110deg, rgba(255, 245, 1, 0.75), rgba(255, 0, 170, 0.75), rgba(193, 0, 240, 0.75), rgba(0, 248, 254, 0.75), rgba(9, 235, 0, 0.75));
 
-
-
-
-    --misc-color-green: #A6FF00;
+    --menu-button-hover-2: linear-gradient(110deg, rgba(166, 3, 139, 0.75), rgba(3, 88, 140, 0.75), rgba(3, 150, 66, 0.75), rgba(3, 166, 166, 0.75), rgba(4, 191, 173, 0.75));
+    
+    --misc-green: #A6FF00;
 
 }
+
 
 html {
     margin: 0;
@@ -105,7 +115,7 @@ body {
 }
 
 #nav-icon-dashboard a:hover {
-    background: var(--menu-button-hover);
+    background: var(--menu-button-hover-2);
 }
 
 
@@ -161,7 +171,7 @@ h1 {
     line-height: 4.8rem;
     letter-spacing: 0.1rem;
 
-    background: var(--header-gradient);
+    background: var(--alt-gradient-1);
     background-clip: text;
     color: transparent;
 }
@@ -222,7 +232,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
 }
 
@@ -232,6 +242,7 @@ h2 {
     margin: 0.4rem auto 1rem auto;
     width: 30rem;
     overflow-wrap: normal;
+    height: 25rem;
 }
 
 .card h3 {
@@ -242,7 +253,7 @@ h2 {
     border-bottom: 1px solid white;
 
     font-family: 'Shadows Into Light', cursive;
-    color: var(--sub-header);
+    color: var(--alt-gradient-1-light-green);
     opacity: 90%;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -290,6 +301,7 @@ h4 {
     content: "";
     clear: both;
     display: flex;
+    overflow: hidden;
 }
 
 .skill-icon-tray {
@@ -355,7 +367,7 @@ button {
 
 #social-icon-dashboard a:hover {
     border: 1px solid white;
-    background: var(--menu-button-hover);
+    background: var(--menu-button-hover-2);
 }
 
 #social-icon-dashboard i {
@@ -396,7 +408,7 @@ button {
     line-height: 1.2rem;
     text-transform: uppercase;
     font-family: 'Shadows Into Light', cursive;
-    color: var(--gradient-green);
+    color: var(--alt-gradient-1-light-green);
 }
 
 .about-card p {
