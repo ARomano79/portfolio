@@ -242,7 +242,9 @@ h2 {
     margin: 0.4rem auto 1rem auto;
     width: 30rem;
     overflow-wrap: normal;
-    height: 25rem;
+    height: 26rem;
+    width: 26rem;
+    
 }
 
 .card h3 {
