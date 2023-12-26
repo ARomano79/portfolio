@@ -242,16 +242,37 @@ h2 {
     margin: 0.4rem auto 1rem auto;
     width: 30rem;
     overflow-wrap: normal;
+    width: 28rem;
    
     
 }
 
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .card {
         height: 28rem;
-        width: 28rem;
     }
 }
+
+@media only screen and (min-width: 401px) and (max-width: 576px) {
+    .card {
+        height: 25rem;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .card {
+        height: 24rem;
+        
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .card {
+        height: 24rem;
+        
+    }
+}
+
 
 
 .card h3 {
