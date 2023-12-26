@@ -242,10 +242,17 @@ h2 {
     margin: 0.4rem auto 1rem auto;
     width: 30rem;
     overflow-wrap: normal;
-    height: 28rem;
-    width: 28rem;
+   
     
 }
+
+@media screen and (max-width: 400px) {
+    .card {
+        height: 28rem;
+        width: 28rem;
+    }
+}
+
 
 .card h3 {
     margin: 0 auto;
