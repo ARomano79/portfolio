@@ -357,7 +357,7 @@ h4 {
     line-height: 0.9rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    align-items: center;
+    align-items: flex-start;
     color: var(--text-main);
 }
 
