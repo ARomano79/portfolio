@@ -250,6 +250,11 @@ h2 {
 @media only screen and (max-width: 400px) {
     .card {
         height: 28rem;
+
+    }
+
+    .ad-box img {
+        height: 22rem;
     }
 }
 
