@@ -274,7 +274,6 @@ h2 {
 }
 
 
-
 .card h3 {
     margin: 0 auto;
     padding: 0.2rem;
@@ -333,6 +332,18 @@ h4 {
     display: flex;
     overflow: hidden;
 }
+
+
+.ad-box {
+    height: 24rem;
+    border: 8px double white;
+}
+
+.ad-box img {
+    margin:  2rem auto 1rem auto;
+}
+
+
 
 .skill-icon-tray {
     margin: 0.2rem auto 0.1rem auto;
