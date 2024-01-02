@@ -29,16 +29,12 @@
 
     --alt-gradient-1: repeating-linear-gradient(110deg, rgb(255, 255, 255), rgb(166, 3, 139), rgb(3, 88, 140), rgb(3, 150, 66), rgb(3, 166, 166), rgb(4, 191, 173), rgb(255, 255, 255));
     
-    
-    
     --text-main: rgb(255, 255, 255);
 
     --menu-button-hover: repeating-linear-gradient(110deg, rgba(255, 245, 1, 0.75), rgba(255, 0, 170, 0.75), rgba(193, 0, 240, 0.75), rgba(0, 248, 254, 0.75), rgba(9, 235, 0, 0.75));
 
     --menu-button-hover-2: linear-gradient(110deg, rgba(166, 3, 139, 0.75), rgba(3, 88, 140, 0.75), rgba(3, 150, 66, 0.75), rgba(3, 166, 166, 0.75), rgba(4, 191, 173, 0.75));
-    
-    --misc-green: #A6FF00;
-
+    --hover-overlay: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -244,7 +240,6 @@ h2 {
     overflow-wrap: normal;
     width: 28rem;
    
-    
 }
 
 @media only screen and (max-width: 400px) {
@@ -338,6 +333,10 @@ h4 {
     overflow: hidden;
 }
 
+ a:hover .card {
+    background-color: var(--hover-overlay);
+    cursor: pointer;
+}
 
 .ad-box {
     height: 24rem;
@@ -347,8 +346,6 @@ h4 {
 .ad-box img {
     margin:  2rem auto 1rem auto;
 }
-
-
 
 .skill-icon-tray {
     margin: 0.2rem auto 0.1rem auto;
@@ -487,6 +484,15 @@ button {
     color: var(--text-main);
 }
 /* END FOOTER */
+
+a {
+    color: var(--text-main);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--text-main);
+    text-decoration: none;
+}
 
 /* SPACERS */
 .spacer-1rem {
