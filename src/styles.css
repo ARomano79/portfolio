@@ -352,11 +352,6 @@ h4, h5 {
     margin:  2rem auto 1rem auto;
 }
 
-@media only screen and (max-width: 400px) {
-    .ad-box img {
-        height: 22rem;
-    }
-    }
 
 /*    check out again later 
 
