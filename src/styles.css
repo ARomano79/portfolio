@@ -429,7 +429,7 @@ h4, h5 {
 /* END PROJECT & ABOUT SECTIONS */
 
 /* FOOTER */
-footer p {
+footer p, #current-year {
     margin: 0 auto;
     padding: 0.2rem;
     font-family: 'Shadows Into Light', cursive;
